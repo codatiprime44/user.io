@@ -1,0 +1,176 @@
+.iconsBar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    column-gap: 10px;
+    justify-content: space-between;
+    align-items: end;
+    overflow: hidden;
+}
+.areaGame {
+    width: 90%;
+    height: 250px;
+    background-color: #151028;
+    border: 1px solid rgb(38, 28, 74);
+    border-radius: 12px;
+    margin: 0 auto;
+}
+.areaGameСloud {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.areaGameСloud img {
+    position: relative;
+    top: 10%;
+}
+.clouds {
+    height: 50%;
+    position: relative;
+    animation-name: changeLeft;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes changeLeft {
+    0% {
+        left: 0%;
+    }
+    100% {
+          left: -100%;
+    }
+}
+.areaGamePeple {
+    max-height: 250px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 11;
+    top: calc(-250px);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.pepleFire {
+    flex: 1;
+    max-height: 100px;
+    animation-name: peple;
+    animation-duration: 1500ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: -100px;
+}
+@keyframes peple {
+    0% {
+        margin-top: -8px;
+    }
+    50% {
+        margin-top: 8px;
+    }
+    100% {
+        margin-top: -8px;
+    }
+}
+
+.peple {
+    width: 80px;
+    position: relative;
+    z-index: 6;
+    left: -6px;
+}
+.fire {
+    width: 30px;
+    transform: rotate(-140deg);
+    position: relative;
+    z-index: 5;
+    top: 25px;
+    left: -105px;
+    opacity: 0.9;
+}
+@media (max-width: 403px) {
+    .pepleFire {
+        left: -70px;
+    }
+    .fire {
+        top: -40px;
+        left: -25px;
+    }
+}
+.dialog {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    max-height: 110px;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 50px;
+    position: relative;
+    z-index: 4;
+    opacity: 0.9;
+}
+.areaGameDonload {
+    max-height: 250px;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 11;
+    top: calc(-500px);
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.donload {
+    width: 20%;
+    margin: 0;
+}
+.areInfoSiglals {
+    width: 90%;
+    margin: 0 auto;
+}
+.areInfoSiglals p {
+    color: aliceblue;
+    line-height: 25px;
+    opacity: 0.5;
+}
+.status {
+    width: 90%;
+    margin: 0 auto;
+    height: 20px;
+    background-color: #151028;
+    border-radius: 5px;
+    border: 1px solid rgb(38, 28, 74);
+}
+.statusBlock {
+    background: linear-gradient(263.87deg, rgb(148, 78, 245) 0%, rgb(92, 36, 252) 100%);
+    box-shadow: rgba(25, 201, 245, 0.1) 0px 10px 20px, rgba(92, 36, 252, 0.1) 0px 10px 20px, rgb(148, 78, 245) 0px -2px 4px inset, rgba(148, 78, 245, 0.6) 0px -8px 8px inset;
+    height: 20px;
+    width: 0%;
+    border-radius: 5px;
+}
+.filling {
+    width: 100%;
+}
+.xResult {
+    
+}
+.xResultA1 {
+    text-decoration: none;
+    color: aliceblue;
+}
+.buttonForm {
+    width: 90%;
+    margin: 0 auto;
+}
+.buttonForm button {
+    width: 100%;
+    margin: 0 auto;
+}
